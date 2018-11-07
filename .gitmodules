@@ -1,0 +1,3 @@
+[submodule "slack-libpurple"]
+	path = slack-libpurple
+	url = git@github.com:tsteiner/slack-libpurple.git

@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D7B18F0205C1C67000AF9D3 /* SlackPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B18EF205C1C67000AF9D3 /* SlackPlugin.m */; };
+		5DA23FF8205C212400DA9289 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA23FF2205C212400DA9289 /* AdiumLibpurple.framework */; };
+		5DA23FF9205C212400DA9289 /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA23FF3205C212400DA9289 /* libpurple.framework */; };
+		5DA23FFA205C212400DA9289 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA23FF4205C212400DA9289 /* AIUtilities.framework */; };
+		5DA23FFB205C212400DA9289 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA23FF5205C212400DA9289 /* Adium.framework */; };
+		5DA23FFC205C212400DA9289 /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA23FF6205C212400DA9289 /* libglib.framework */; };
+		5DA23FFD205C212400DA9289 /* libgobject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA23FF7205C212400DA9289 /* libgobject.framework */; };
+		5DA24020205C249B00DA9289 /* slack-channel.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24003205C249A00DA9289 /* slack-channel.c */; };
+		5DA24021205C249B00DA9289 /* slack-user.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24006205C249A00DA9289 /* slack-user.c */; };
+		5DA24022205C249B00DA9289 /* slack-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24007205C249A00DA9289 /* slack-api.c */; };
+		5DA24023205C249B00DA9289 /* slack-json.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24008205C249A00DA9289 /* slack-json.c */; };
+		5DA24024205C249B00DA9289 /* slack-object.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2400C205C249A00DA9289 /* slack-object.c */; };
+		5DA24025205C249B00DA9289 /* slack-rtm.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2400D205C249A00DA9289 /* slack-rtm.c */; };
+		5DA24026205C249B00DA9289 /* slack-blist.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2400E205C249A00DA9289 /* slack-blist.c */; };
+		5DA24027205C249B00DA9289 /* slack-message.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24010205C249A00DA9289 /* slack-message.c */; };
+		5DA24028205C249B00DA9289 /* slack.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24011205C249A00DA9289 /* slack.c */; };
+		5DA24029205C249B00DA9289 /* slack-cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24013205C249A00DA9289 /* slack-cmd.c */; };
+		5DA2402A205C249B00DA9289 /* purple-websocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24015205C249A00DA9289 /* purple-websocket.c */; };
+		5DA2402B205C249B00DA9289 /* slack-conversation.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2401C205C249B00DA9289 /* slack-conversation.c */; };
+		5DA2402C205C249B00DA9289 /* slack-im.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2401E205C249B00DA9289 /* slack-im.c */; };
+		5DA2402D205C249B00DA9289 /* json.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2401F205C249B00DA9289 /* json.c */; };
+		5DA24030205C387000DA9289 /* SlackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2402F205C387000DA9289 /* SlackService.m */; };
+		5DA24036205C396000DA9289 /* CBSlackAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24035205C396000DA9289 /* CBSlackAccount.m */; };
+		5DA2404F205C643200DA9289 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA2404E205C643200DA9289 /* Cocoa.framework */; };
+		5DA24051205C646A00DA9289 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA24050205C646A00DA9289 /* Foundation.framework */; };
+		5DA24053205C647300DA9289 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA24052205C647300DA9289 /* AppKit.framework */; };
+		5DA24055205C649300DA9289 /* SlackAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA24054205C649300DA9289 /* SlackAccountView.xib */; };
+		5DA24058205C64E200DA9289 /* SlackAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24057205C64E200DA9289 /* SlackAccountViewController.m */; };
+		5DA24077206071F700DA9289 /* slack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA24076206071F700DA9289 /* slack.png */; };
+		5DA2407A206172B000DA9289 /* SlackJoinChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA24079206172B000DA9289 /* SlackJoinChatViewController.m */; };
+		5DA2407C2061730600DA9289 /* SlackJoinChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DA2407B2061730600DA9289 /* SlackJoinChatView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DA24067205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34BD9DA9053146CC000AB133;
+			remoteInfo = Adium;
+		};
+		5DA24069205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34BD9DE105314751000AB133;
+			remoteInfo = Adium.Framework;
+		};
+		5DA2406B205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3485D68009EB416300232CC4;
+			remoteInfo = AdiumLibpurple;
+		};
+		5DA2406D205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6334FBFC0F9C11DC003C77A9;
+			remoteInfo = AIUtilities.framework;
+		};
+		5DA2406F205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 349C2EFA0867AC97000BF883;
+			remoteInfo = AdiumApplescriptRunner;
+		};
+		5DA24071205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 312ED3CA0C7E875B00A6BDA9;
+			remoteInfo = "Unit tests";
+		};
+		5DA24073205C672000DA9289 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 633D4FA40F9D3073004F491E;
+			remoteInfo = "Spotlight Importer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D7B18E5205C1BF9000AF9D3 /* slack-adium.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "slack-adium.AdiumPlugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7B18E8205C1BF9000AF9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7B18EE205C1C67000AF9D3 /* SlackPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackPlugin.h; sourceTree = "<group>"; };
+		5D7B18EF205C1C67000AF9D3 /* SlackPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackPlugin.m; sourceTree = "<group>"; };
+		5DA23FF2205C212400DA9289 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = ../../../../Applications/Adium.app/Contents/Frameworks/AdiumLibpurple.framework; sourceTree = "<group>"; };
+		5DA23FF3205C212400DA9289 /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = ../../../../Applications/Adium.app/Contents/Frameworks/libpurple.framework; sourceTree = "<group>"; };
+		5DA23FF4205C212400DA9289 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = ../../../../Applications/Adium.app/Contents/Frameworks/AIUtilities.framework; sourceTree = "<group>"; };
+		5DA23FF5205C212400DA9289 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = ../../../../Applications/Adium.app/Contents/Frameworks/Adium.framework; sourceTree = "<group>"; };
+		5DA23FF6205C212400DA9289 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = ../../../../Applications/Adium.app/Contents/Frameworks/libglib.framework; sourceTree = "<group>"; };
+		5DA23FF7205C212400DA9289 /* libgobject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgobject.framework; path = ../../../../Applications/Adium.app/Contents/Frameworks/libgobject.framework; sourceTree = "<group>"; };
+		5DA24003205C249A00DA9289 /* slack-channel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-channel.c"; path = "slack-libpurple/slack-channel.c"; sourceTree = "<group>"; };
+		5DA24004205C249A00DA9289 /* slack-blist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-blist.h"; path = "slack-libpurple/slack-blist.h"; sourceTree = "<group>"; };
+		5DA24005205C249A00DA9289 /* slack-im.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-im.h"; path = "slack-libpurple/slack-im.h"; sourceTree = "<group>"; };
+		5DA24006205C249A00DA9289 /* slack-user.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-user.c"; path = "slack-libpurple/slack-user.c"; sourceTree = "<group>"; };
+		5DA24007205C249A00DA9289 /* slack-api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-api.c"; path = "slack-libpurple/slack-api.c"; sourceTree = "<group>"; };
+		5DA24008205C249A00DA9289 /* slack-json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-json.c"; path = "slack-libpurple/slack-json.c"; sourceTree = "<group>"; };
+		5DA24009205C249A00DA9289 /* glibcompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = glibcompat.h; path = "slack-libpurple/glibcompat.h"; sourceTree = "<group>"; };
+		5DA2400A205C249A00DA9289 /* slack-channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-channel.h"; path = "slack-libpurple/slack-channel.h"; sourceTree = "<group>"; };
+		5DA2400B205C249A00DA9289 /* slack-user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-user.h"; path = "slack-libpurple/slack-user.h"; sourceTree = "<group>"; };
+		5DA2400C205C249A00DA9289 /* slack-object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-object.c"; path = "slack-libpurple/slack-object.c"; sourceTree = "<group>"; };
+		5DA2400D205C249A00DA9289 /* slack-rtm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-rtm.c"; path = "slack-libpurple/slack-rtm.c"; sourceTree = "<group>"; };
+		5DA2400E205C249A00DA9289 /* slack-blist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-blist.c"; path = "slack-libpurple/slack-blist.c"; sourceTree = "<group>"; };
+		5DA2400F205C249A00DA9289 /* purple-websocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "purple-websocket.h"; path = "slack-libpurple/purple-websocket.h"; sourceTree = "<group>"; };
+		5DA24010205C249A00DA9289 /* slack-message.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-message.c"; path = "slack-libpurple/slack-message.c"; sourceTree = "<group>"; };
+		5DA24011205C249A00DA9289 /* slack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = slack.c; path = "slack-libpurple/slack.c"; sourceTree = "<group>"; };
+		5DA24012205C249A00DA9289 /* slack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = slack.h; path = "slack-libpurple/slack.h"; sourceTree = "<group>"; };
+		5DA24013205C249A00DA9289 /* slack-cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-cmd.c"; path = "slack-libpurple/slack-cmd.c"; sourceTree = "<group>"; };
+		5DA24014205C249A00DA9289 /* slack-object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-object.h"; path = "slack-libpurple/slack-object.h"; sourceTree = "<group>"; };
+		5DA24015205C249A00DA9289 /* purple-websocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "purple-websocket.c"; path = "slack-libpurple/purple-websocket.c"; sourceTree = "<group>"; };
+		5DA24016205C249A00DA9289 /* slack-message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-message.h"; path = "slack-libpurple/slack-message.h"; sourceTree = "<group>"; };
+		5DA24017205C249A00DA9289 /* slack-api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-api.h"; path = "slack-libpurple/slack-api.h"; sourceTree = "<group>"; };
+		5DA24018205C249A00DA9289 /* slack-cmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-cmd.h"; path = "slack-libpurple/slack-cmd.h"; sourceTree = "<group>"; };
+		5DA24019205C249A00DA9289 /* slack-json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-json.h"; path = "slack-libpurple/slack-json.h"; sourceTree = "<group>"; };
+		5DA2401A205C249A00DA9289 /* slack-rtm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-rtm.h"; path = "slack-libpurple/slack-rtm.h"; sourceTree = "<group>"; };
+		5DA2401B205C249B00DA9289 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = "slack-libpurple/json.h"; sourceTree = "<group>"; };
+		5DA2401C205C249B00DA9289 /* slack-conversation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-conversation.c"; path = "slack-libpurple/slack-conversation.c"; sourceTree = "<group>"; };
+		5DA2401D205C249B00DA9289 /* slack-conversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "slack-conversation.h"; path = "slack-libpurple/slack-conversation.h"; sourceTree = "<group>"; };
+		5DA2401E205C249B00DA9289 /* slack-im.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "slack-im.c"; path = "slack-libpurple/slack-im.c"; sourceTree = "<group>"; };
+		5DA2401F205C249B00DA9289 /* json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = json.c; path = "slack-libpurple/json.c"; sourceTree = "<group>"; };
+		5DA2402E205C387000DA9289 /* SlackService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackService.h; sourceTree = "<group>"; };
+		5DA2402F205C387000DA9289 /* SlackService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackService.m; sourceTree = "<group>"; };
+		5DA24034205C396000DA9289 /* CBSlackAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBSlackAccount.h; sourceTree = "<group>"; };
+		5DA24035205C396000DA9289 /* CBSlackAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBSlackAccount.m; sourceTree = "<group>"; };
+		5DA2404E205C643200DA9289 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5DA24050205C646A00DA9289 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DA24052205C647300DA9289 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5DA24054205C649300DA9289 /* SlackAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlackAccountView.xib; sourceTree = "<group>"; };
+		5DA24056205C64E200DA9289 /* SlackAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackAccountViewController.h; sourceTree = "<group>"; };
+		5DA24057205C64E200DA9289 /* SlackAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackAccountViewController.m; sourceTree = "<group>"; };
+		5DA24059205C671E00DA9289 /* Adium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Adium.xcodeproj; path = ../adium/Adium.xcodeproj; sourceTree = "<group>"; };
+		5DA24076206071F700DA9289 /* slack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slack.png; sourceTree = "<group>"; };
+		5DA24078206172B000DA9289 /* SlackJoinChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackJoinChatViewController.h; sourceTree = "<group>"; };
+		5DA24079206172B000DA9289 /* SlackJoinChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackJoinChatViewController.m; sourceTree = "<group>"; };
+		5DA2407B2061730600DA9289 /* SlackJoinChatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlackJoinChatView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D7B18E2205C1BF9000AF9D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA24053205C647300DA9289 /* AppKit.framework in Frameworks */,
+				5DA24051205C646A00DA9289 /* Foundation.framework in Frameworks */,
+				5DA2404F205C643200DA9289 /* Cocoa.framework in Frameworks */,
+				5DA23FF8205C212400DA9289 /* AdiumLibpurple.framework in Frameworks */,
+				5DA23FF9205C212400DA9289 /* libpurple.framework in Frameworks */,
+				5DA23FFA205C212400DA9289 /* AIUtilities.framework in Frameworks */,
+				5DA23FFB205C212400DA9289 /* Adium.framework in Frameworks */,
+				5DA23FFC205C212400DA9289 /* libglib.framework in Frameworks */,
+				5DA23FFD205C212400DA9289 /* libgobject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D7B18DC205C1BF9000AF9D3 = {
+			isa = PBXGroup;
+			children = (
+				5DA24059205C671E00DA9289 /* Adium.xcodeproj */,
+				5DA24002205C247900DA9289 /* slack-libpurple */,
+				5D7B18E7205C1BF9000AF9D3 /* slack-adium */,
+				5D7B18E6205C1BF9000AF9D3 /* Products */,
+				5D7B18F1205C1D41000AF9D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D7B18E6205C1BF9000AF9D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D7B18E5205C1BF9000AF9D3 /* slack-adium.AdiumPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D7B18E7205C1BF9000AF9D3 /* slack-adium */ = {
+			isa = PBXGroup;
+			children = (
+				5DA24076206071F700DA9289 /* slack.png */,
+				5D7B18E8205C1BF9000AF9D3 /* Info.plist */,
+				5D7B18EE205C1C67000AF9D3 /* SlackPlugin.h */,
+				5D7B18EF205C1C67000AF9D3 /* SlackPlugin.m */,
+				5DA2402E205C387000DA9289 /* SlackService.h */,
+				5DA2402F205C387000DA9289 /* SlackService.m */,
+				5DA24034205C396000DA9289 /* CBSlackAccount.h */,
+				5DA24035205C396000DA9289 /* CBSlackAccount.m */,
+				5DA24056205C64E200DA9289 /* SlackAccountViewController.h */,
+				5DA24057205C64E200DA9289 /* SlackAccountViewController.m */,
+				5DA24054205C649300DA9289 /* SlackAccountView.xib */,
+				5DA24078206172B000DA9289 /* SlackJoinChatViewController.h */,
+				5DA24079206172B000DA9289 /* SlackJoinChatViewController.m */,
+				5DA2407B2061730600DA9289 /* SlackJoinChatView.xib */,
+			);
+			path = "slack-adium";
+			sourceTree = "<group>";
+		};
+		5D7B18F1205C1D41000AF9D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DA24052205C647300DA9289 /* AppKit.framework */,
+				5DA24050205C646A00DA9289 /* Foundation.framework */,
+				5DA2404E205C643200DA9289 /* Cocoa.framework */,
+				5DA23FF5205C212400DA9289 /* Adium.framework */,
+				5DA23FF2205C212400DA9289 /* AdiumLibpurple.framework */,
+				5DA23FF4205C212400DA9289 /* AIUtilities.framework */,
+				5DA23FF6205C212400DA9289 /* libglib.framework */,
+				5DA23FF7205C212400DA9289 /* libgobject.framework */,
+				5DA23FF3205C212400DA9289 /* libpurple.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DA24002205C247900DA9289 /* slack-libpurple */ = {
+			isa = PBXGroup;
+			children = (
+				5DA24009205C249A00DA9289 /* glibcompat.h */,
+				5DA2401F205C249B00DA9289 /* json.c */,
+				5DA2401B205C249B00DA9289 /* json.h */,
+				5DA24015205C249A00DA9289 /* purple-websocket.c */,
+				5DA2400F205C249A00DA9289 /* purple-websocket.h */,
+				5DA24007205C249A00DA9289 /* slack-api.c */,
+				5DA24017205C249A00DA9289 /* slack-api.h */,
+				5DA2400E205C249A00DA9289 /* slack-blist.c */,
+				5DA24004205C249A00DA9289 /* slack-blist.h */,
+				5DA24003205C249A00DA9289 /* slack-channel.c */,
+				5DA2400A205C249A00DA9289 /* slack-channel.h */,
+				5DA24013205C249A00DA9289 /* slack-cmd.c */,
+				5DA24018205C249A00DA9289 /* slack-cmd.h */,
+				5DA2401C205C249B00DA9289 /* slack-conversation.c */,
+				5DA2401D205C249B00DA9289 /* slack-conversation.h */,
+				5DA2401E205C249B00DA9289 /* slack-im.c */,
+				5DA24005205C249A00DA9289 /* slack-im.h */,
+				5DA24008205C249A00DA9289 /* slack-json.c */,
+				5DA24019205C249A00DA9289 /* slack-json.h */,
+				5DA24010205C249A00DA9289 /* slack-message.c */,
+				5DA24016205C249A00DA9289 /* slack-message.h */,
+				5DA2400C205C249A00DA9289 /* slack-object.c */,
+				5DA24014205C249A00DA9289 /* slack-object.h */,
+				5DA2400D205C249A00DA9289 /* slack-rtm.c */,
+				5DA2401A205C249A00DA9289 /* slack-rtm.h */,
+				5DA24006205C249A00DA9289 /* slack-user.c */,
+				5DA2400B205C249A00DA9289 /* slack-user.h */,
+				5DA24011205C249A00DA9289 /* slack.c */,
+				5DA24012205C249A00DA9289 /* slack.h */,
+			);
+			name = "slack-libpurple";
+			sourceTree = "<group>";
+		};
+		5DA2405A205C671E00DA9289 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA24068205C672000DA9289 /* Adium.app */,
+				5DA2406A205C672000DA9289 /* Adium.framework */,
+				5DA2406C205C672000DA9289 /* AdiumLibpurple.framework */,
+				5DA2406E205C672000DA9289 /* AIUtilities.framework */,
+				5DA24070205C672000DA9289 /* AdiumApplescriptRunner */,
+				5DA24072205C672000DA9289 /* Unit tests.octest */,
+				5DA24074205C672000DA9289 /* AdiumSpotlightImporter.mdimporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D7B18E4205C1BF9000AF9D3 /* slack-adium */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7B18EB205C1BF9000AF9D3 /* Build configuration list for PBXNativeTarget "slack-adium" */;
+			buildPhases = (
+				5D7B18E1205C1BF9000AF9D3 /* Sources */,
+				5D7B18E2205C1BF9000AF9D3 /* Frameworks */,
+				5D7B18E3205C1BF9000AF9D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "slack-adium";
+			productName = "slack-adium";
+			productReference = 5D7B18E5205C1BF9000AF9D3 /* slack-adium.AdiumPlugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D7B18DD205C1BF9000AF9D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "University of Nebraska-Lincoln";
+				TargetAttributes = {
+					5D7B18E4205C1BF9000AF9D3 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5D7B18E0205C1BF9000AF9D3 /* Build configuration list for PBXProject "slack-adium" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5D7B18DC205C1BF9000AF9D3;
+			productRefGroup = 5D7B18E6205C1BF9000AF9D3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5DA2405A205C671E00DA9289 /* Products */;
+					ProjectRef = 5DA24059205C671E00DA9289 /* Adium.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5D7B18E4205C1BF9000AF9D3 /* slack-adium */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5DA24068205C672000DA9289 /* Adium.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Adium.app;
+			remoteRef = 5DA24067205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA2406A205C672000DA9289 /* Adium.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Adium.framework;
+			remoteRef = 5DA24069205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA2406C205C672000DA9289 /* AdiumLibpurple.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AdiumLibpurple.framework;
+			remoteRef = 5DA2406B205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA2406E205C672000DA9289 /* AIUtilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AIUtilities.framework;
+			remoteRef = 5DA2406D205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA24070205C672000DA9289 /* AdiumApplescriptRunner */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = AdiumApplescriptRunner;
+			remoteRef = 5DA2406F205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA24072205C672000DA9289 /* Unit tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Unit tests.octest";
+			remoteRef = 5DA24071205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5DA24074205C672000DA9289 /* AdiumSpotlightImporter.mdimporter */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AdiumSpotlightImporter.mdimporter;
+			remoteRef = 5DA24073205C672000DA9289 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D7B18E3205C1BF9000AF9D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA24077206071F700DA9289 /* slack.png in Resources */,
+				5DA24055205C649300DA9289 /* SlackAccountView.xib in Resources */,
+				5DA2407C2061730600DA9289 /* SlackJoinChatView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D7B18E1205C1BF9000AF9D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DA2402B205C249B00DA9289 /* slack-conversation.c in Sources */,
+				5DA24036205C396000DA9289 /* CBSlackAccount.m in Sources */,
+				5DA24021205C249B00DA9289 /* slack-user.c in Sources */,
+				5DA24022205C249B00DA9289 /* slack-api.c in Sources */,
+				5DA24020205C249B00DA9289 /* slack-channel.c in Sources */,
+				5DA2407A206172B000DA9289 /* SlackJoinChatViewController.m in Sources */,
+				5DA24025205C249B00DA9289 /* slack-rtm.c in Sources */,
+				5DA2402D205C249B00DA9289 /* json.c in Sources */,
+				5DA24058205C64E200DA9289 /* SlackAccountViewController.m in Sources */,
+				5DA24024205C249B00DA9289 /* slack-object.c in Sources */,
+				5D7B18F0205C1C67000AF9D3 /* SlackPlugin.m in Sources */,
+				5DA24030205C387000DA9289 /* SlackService.m in Sources */,
+				5DA24028205C249B00DA9289 /* slack.c in Sources */,
+				5DA2402A205C249B00DA9289 /* purple-websocket.c in Sources */,
+				5DA24023205C249B00DA9289 /* slack-json.c in Sources */,
+				5DA2402C205C249B00DA9289 /* slack-im.c in Sources */,
+				5DA24026205C249B00DA9289 /* slack-blist.c in Sources */,
+				5DA24029205C249B00DA9289 /* slack-cmd.c in Sources */,
+				5DA24027205C249B00DA9289 /* slack-message.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5D7B18E9205C1BF9000AF9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5D7B18EA205C1BF9000AF9D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5D7B18EC205C1BF9000AF9D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					/Applications/Adium.app/Contents/Frameworks,
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/pidgin/current/include,
+					"/usr/local/glib/current/include/glib-2.0",
+					"/usr/local/glib/current/lib/glib-2.0/include",
+					/usr/local/pidgin/current/include/libpurple,
+				);
+				INFOPLIST_FILE = "slack-adium/Info.plist";
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = "PURPLE_STATIC_PRPL=1";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
+				PRODUCT_BUNDLE_IDENTIFIER = "unl.edu.slack-adium";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = AdiumPlugin;
+			};
+			name = Debug;
+		};
+		5D7B18ED205C1BF9000AF9D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					/Applications/Adium.app/Contents/Frameworks,
+				);
+				HEADER_SEARCH_PATHS = (
+					/usr/local/pidgin/current/include,
+					"/usr/local/glib/current/include/glib-2.0",
+					"/usr/local/glib/current/lib/glib-2.0/include",
+					/usr/local/pidgin/current/include/libpurple,
+				);
+				INFOPLIST_FILE = "slack-adium/Info.plist";
+				INFOPLIST_PREPROCESSOR_DEFINITIONS = "PURPLE_STATIC_PRPL=1";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_CFLAGS = "-DPURPLE_STATIC_PRPL";
+				PRODUCT_BUNDLE_IDENTIFIER = "unl.edu.slack-adium";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = AdiumPlugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D7B18E0205C1BF9000AF9D3 /* Build configuration list for PBXProject "slack-adium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7B18E9205C1BF9000AF9D3 /* Debug */,
+				5D7B18EA205C1BF9000AF9D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7B18EB205C1BF9000AF9D3 /* Build configuration list for PBXNativeTarget "slack-adium" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7B18EC205C1BF9000AF9D3 /* Debug */,
+				5D7B18ED205C1BF9000AF9D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D7B18DD205C1BF9000AF9D3 /* Project object */;
+}
